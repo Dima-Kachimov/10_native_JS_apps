@@ -1,16 +1,18 @@
+// Получаем элементы со страницы
 const btn = document.getElementById('btn')
 const body = document.querySelector('body')
 const color = document.querySelector('.color')
 
-// const rgbRandom = () => {
-//     const rgb1 = Math.floor(Math.random() * 255)
-//     const rgb2 = Math.floor(Math.random() * 255)
-//     const rgb3 = Math.floor(Math.random() * 255)
-//     return `rgb(${rgb1}, ${rgb2}, ${rgb3})`
-// }
+// Обьявляем переменную с активным цветом
+let colorActive
 
-let colorActive = '#283cff'
+// Слушаем событе CLICK и меняем цвет на странице
+btn.addEventListener('click', () => {
+    body.style.backgroundColor = generateRandomColor()
+    color.textContent = colorActive
+})
 
+// Функция генерации цвета в формате HEX
 function generateRandomColor() {
     // Генерируем три случайных значения для красного, зеленого и синего каналов
     const red = Math.floor(Math.random() * 256);
@@ -23,15 +25,11 @@ function generateRandomColor() {
     const hexBlue = blue.toString(16).padStart(2, '0');
 
     const hexColor = `#${hexRed}${hexGreen}${hexBlue}`
+
+    // Меняем активный цвет
     colorActive = hexColor
 
     // Собираем итоговый цвет в формате HEX
     return hexColor;
-
 }
-btn.addEventListener('click', () => {
-    body.style.backgroundColor = generateRandomColor()
-    color.textContent = colorActive
-})
-
 

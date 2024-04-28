@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(23, 19, 19, 0.93);
+    font-family: "Open Sans", sans-serif;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.header {
+    position: sticky;
+    z-index: 2;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: rgba(34, 34, 34, 0.9);
+}
+
+.logo {
+    font-size: 32px;
+    color: #fff;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.search {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid #595959;
+    outline: none;
+    padding: 10px;
+    font-size: 18px;
+}
+
+
+.movies__wrap {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.movies__item {
+    position: relative;
+    max-width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.15s cubic-bezier(0.02, 0, 0.12, 1.01);
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 45px;
+    height: 45px;
+    background-color: #222222;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.ration-mod__green {
+    border: 2px solid #1f750d;
+}
+
+.ration-mod__orange {
+    border: 2px solid #af8f07;
+}
+
+.ration-mod__red {
+    border: 2px solid #bd1c2b;
+}
+
+.movies__item:hover {
+    background-color: rgb(23, 19, 19);
+}
+
+.img__wrap {
+    width: 280px;
+    height: 400px;
+}
+
+.img__wrap img {
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.movie__title {
+    padding-top: 8px;
+    color: #fff;
+    font-size: 22px;
+}
+
+.movie__categories {
+    padding-top: 8px;
+    color: #ecc202;
+
+}

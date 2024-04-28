@@ -110,5 +110,139 @@ body {
 .movie__categories {
     padding-top: 8px;
     color: #ecc202;
-
 }
+
+/* Modal window */
+.modal__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(96, 96, 96, 0.6);
+    z-index: 5;
+
+    display: none
+}
+
+.openModal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal__window {
+    position: relative;
+    width: 900px;
+    height: auto;
+    background-color: #222222;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 26px 1px #86cdff42;
+    color: #fff;
+}
+
+
+.flex__wrap {
+    display: flex;
+    gap: 20px;
+}
+
+.image {
+    max-width: 300px;
+    max-height: 500px;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.content {
+    flex-basis: 70%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.content__title {
+    font-size: 28px;
+}
+
+.content__genres {
+    color: #ecc202;
+}
+
+.content__year {
+}
+
+.content__countries {
+}
+
+.content__webUrl {
+    width: 350px;
+    height: 50px;
+    padding: 10px;
+    font-size: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #ecc202;
+    border: 0;
+    border-radius: 5px;
+    font-weight: 700;
+    color: #1c1c1c;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.2s ease-in, color 0.2s ease-in;
+}
+
+.content__webUrl:hover {
+    background-color: #a3a3a3;
+    color: #000;
+}
+
+.link_btn {
+    color: inherit;
+    text-decoration: none;
+    align-self: center;
+}
+
+.description {
+    flex: 1;
+}
+
+span {
+    color: #919191;
+    font-size: 16px;
+    margin-right: 20px;
+    font-weight: 200;
+}
+
+th {
+    text-align: start;
+    width: 120px;
+    padding-bottom: 20px;
+}
+
+td {
+    padding-bottom: 20px;
+}
+
+.modal__close {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in;
+}
+
+.modal__close:hover {
+    transform: scale(1.1) rotate(90deg);
+}
+

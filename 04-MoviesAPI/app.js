@@ -93,6 +93,7 @@ async function openModal(id) {
     const dataRes = await res.json();
     console.log(dataRes);
     modalWindow.classList.add('openModal');
+    document.body.classList.add('stop__scroll');
     modalWindow.innerHTML = `
                 <div class="modal__window">
                     <img class="modal__close" src="./modal_close.svg" alt="" />
@@ -165,4 +166,5 @@ async function openModal(id) {
 
 function closeModal() {
     modalWindow.classList.remove('openModal');
+    document.body.classList.remove('stop__scroll');
 }

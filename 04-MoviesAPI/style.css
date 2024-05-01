@@ -246,3 +246,7 @@ td {
     transform: scale(1.1) rotate(90deg);
 }
 
+.stop__scroll {
+    height: 100%;
+    overflow: hidden;
+}

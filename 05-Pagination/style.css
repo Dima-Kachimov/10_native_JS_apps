@@ -1,9 +1,60 @@
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    font-family: "Montserrat", sans-serif;
+    height: 100vh;
+}
+
 .btn__active {
     background-color: #ecc202;
+    border: 1px solid #bd1c2b;
+}
+
+.container {
+    height: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    text-align: center;
+    font-weight: 400;
+    font-size: 32px;
+    padding: 10px 0 20px 0;
+}
+
+.posts {
+    flex: 1;
+}
+
+h1 {
+    margin: 10px;
+    font-weight: 400;
+    font-size: 18px;
+    border: 1px solid #49a6e9;
+    padding: 10px;
+}
+
+.pagination {
+    margin-bottom: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #49a6e9;
 }

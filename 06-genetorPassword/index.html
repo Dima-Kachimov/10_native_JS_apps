@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta
+        name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="./app.js"></script>
+    <title>Generator Password</title>
+</head>
+<body>
+<div class="modal-quantity-selection">
+    <div class="quantity-selection__content">
+        <h2>Какой длины должен быть ваш пароль?</h2>
+        <div>
+            <input class="modal-input" type="text" class="characters">
+            <button class="modalBtn">Сгенерировать</button>
+        </div>
+    </div>
+</div>
+<div class="modalMessage">Скопировано</div>
+<div class="interface">
+    <div class="interface-info">Ваш пароль состоит из <span>10</span> символов</div>
+    <button class="btn-interface">Изменить</button>
+</div>
+<div class="container">
+    <h1>Generator Password</h1>
+    <label>
+        <input id="input" placeholder="пароль" type="text" readonly />
+    </label>
+    <button class="copy">Скопировать</button>
+    <button class="generate">Сгенерировать</button>
+</div>
+</body>
+</html>

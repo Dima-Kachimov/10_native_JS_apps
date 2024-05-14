@@ -1,0 +1,126 @@
+body {
+    height: 100vh;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    gap: 20px;
+}
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 300;
+    font-size: 44px;
+}
+
+input {
+    text-align: center;
+    width: 280px;
+    border-radius: 8px;
+    border: 1px solid rgba(65, 65, 65, 0.63);
+    padding: 10px;
+    font-size: 18px;
+    color: #d70000;
+    outline: none;
+}
+
+button {
+    width: 200px;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid rgba(65, 65, 65, 0.63);
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: rgba(65, 65, 65, 0.63);
+    color: #fff;
+}
+
+
+.modal-quantity-selection {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    width: 100%;
+    transform: translateY(-100%);
+    transition: all 0.3s ease-in-out;
+}
+
+.quantity-selection__content {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 600px;
+    background-color: #000;
+    padding: 30px 20px;
+    border-radius: 0px 0px 20px 20px;
+
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-100%);
+    transition: all 0.3s ease-in-out;
+}
+
+.modalAnimation {
+    transform: translateY(0);
+}
+
+h2 {
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 300;
+    font-size: 28px;
+}
+
+.modal-input {
+    max-width: 100px;
+    margin-right: 20px;
+}
+
+.modalBtn {
+    color: #222222;
+    background: #fff;
+}
+
+.interface {
+    position: fixed;
+    font-size: 22px;
+    display: flex;
+    gap: 30px;
+}
+
+.interface span {
+    color: #d70000;
+}
+
+.btn-interface {
+    max-width: 100px;
+    height: 30px;
+}
+
+.modalMessage {
+    background-color: #000;
+    color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    transform: translateX(110%);
+    transition: all 0.3s ease-in-out;
+}
+
+.show {
+    transform: translateX(0);
+}
